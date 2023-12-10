@@ -8,14 +8,12 @@ try: app_id = int(os.environ.get("app_id", "24921874"))
 except Exception as app_id: print(f"⚠️ App ID Invalid {app_id}")
 try: api_hash = os.environ.get("api_hash", "0aed607bea6fe6e021cb99394848e5e4")
 except Exception as api_id: print(f"⚠️ Api Hash Invalid {api_hash}")
-try: bot_token = os.environ.get("bot_token", "6059483725:AAH6IQS6wJHf0IAkeQjiwqBEA-C9F8PPYgg")
+try: bot_token = os.environ.get("bot_token", "6969261266:AAET3R-sez7j6_1qUoQqFAconxAb0ul5Qq4")
 except Exception as bot_token: print(f"⚠️ Bot Token Invalid {bot_token}")
 try: custom_caption = os.environ.get("custom_caption", """ 
 <b>📁{file_name}
 
-╔═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
-💥 𝙅𝙊𝙄𝙉 :- @Techshyam007  💥
-╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>""")
+♻️ Uploaded By @Film_ShowCase</b>""")
 except Exception as custom_caption: print(f"⚠️ Custom Caption Invalid {custom_caption}")
 
 AutoCaptionBotV1 = pyrogram.Client(
@@ -24,8 +22,10 @@ AutoCaptionBotV1 = pyrogram.Client(
 start_message = """
 <b>👋Hello {}</b>
 <b>I am an AutoCaption bot</b>
-<b>All you have to do is add me to your channel and I will show you my power</b>
-<b>Maintained By : @missqueenbotx</b>"""
+<b>⭐️ Movie Request group - https://t.me/+W2uvZ8yehE0xNzU1
+
+💖 Movie updates Channel - https://t.me/+aLYsVJU_dSNiODI9
+💖 Our Discussion Group - https://t.me/FilmShowCase_Discussion_Group</b>"""
 
 about_message = """
 <b>• Name : <a href=https://t.me/missqueenbotx>AutoCaption</a></b>
