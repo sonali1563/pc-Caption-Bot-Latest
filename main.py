@@ -21,18 +21,13 @@ AutoCaptionBotV1 = pyrogram.Client(
 
 start_message = """
 <b>👋Hello {}</b>
-<b>I am an AutoCaption bot</b>
-<b>⭐️ Movie Request group - https://t.me/+W2uvZ8yehE0xNzU1
-
-💖 Movie updates Channel - https://t.me/+aLYsVJU_dSNiODI9
-💖 Our Discussion Group - https://t.me/FilmShowCase_Discussion_Group</b>"""
+Welcome to FilmShowCase - 🎥🍿 Request any movie you want to watch, and our bot  will send it your way. Share your favorite films and discover new ones together. Let's enjoy the world of cinema together!"""
 
 about_message = """
-<b>• Name : <a href=https://t.me/missqueenbotx>AutoCaption</a></b>
-<b>• Developer : <a href=https://t.me/missqueenbotx>Missqueenbotx</a></b>
-<b>• Language : Python3</b>
-<b>• Library : Pyrogram v{version}</b>
-<b>• Updates : <a href=https://t.me/missqueenbotx>Click Here</a></b>"""
+<b>• Name : <a href=https://t.me/missqueenbotx>FilmShowCase</a></b>
+<b>• Movie Request Group : <a href=https://t.me/+W2uvZ8yehE0xNzU1>Movie Request Group</a></b>
+<b>• Discussion Group : <a href=https://t.me/FilmShowCase_Discussion_Group>FilmShowCase_Discussion_Group</a></b>
+<b>• Updates : <a href=https://t.me/+aLYsVJU_dSNiODI9>Click Here</a></b>"""
 
 @AutoCaptionBotV1.on_message(pyrogram.filters.private & pyrogram.filters.command(["start"]))
 def start_command(bot, update):
@@ -81,7 +76,7 @@ def get_file_details(update: pyrogram.types.Message):
 def start_buttons(bot, update):
   bot = bot.get_me()
   buttons = [[
-   pyrogram.types.InlineKeyboardButton("Updates", url="https://t.me/missqueenbotx"),
+   pyrogram.types.InlineKeyboardButton("Updates", url="https://t.me/+aLYsVJU_dSNiODI9"),
    pyrogram.types.InlineKeyboardButton("About 🤠", callback_data="about")
    ],[
    pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"http://t.me/{bot.username}?startchannel=true")
